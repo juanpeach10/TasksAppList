@@ -6,8 +6,10 @@ import {
   View
 } from 'react-native';
 import {Scene, Router} from 'react-native-router-flux';
+
 import Index from './App/views/Index';
 import AddNewTask from './App/views/AddNewTask';
+import TaskDetail from './App/views/TaskDetail';
 
 export default class TodoApp extends Component {
   render() {
@@ -16,6 +18,7 @@ export default class TodoApp extends Component {
         <Scene key="root" hideNavBar>
           <Scene key="index" component={Index}/>
           <Scene key="new_task" component={AddNewTask}></Scene>
+          <Scene key="task_detail" component={TaskDetail}></Scene>
         </Scene>
       </Router>
     );
